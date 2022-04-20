@@ -1,0 +1,94 @@
+body {
+  background-color: #023047;
+}
+.tab-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 0 15px;
+}
+.tab-box {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  width: 100%;
+  border: 2px solid #219ebc;
+  padding: 8px 16px;
+  background-color: #219ebc;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-learn {
+  border: 2px solid #219ebc;
+  padding: 8px 16px;
+  background-color: #219ebc;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.btn:hover,
+.btn-learn:hover {
+  background-color: #fff;
+  color: #219ebc;
+}
+.btn.active {
+  background-color: #fff;
+  color: #219ebc;
+  border-bottom: 2px solid #fff;
+}
+.btn:first-child {
+  border-radius: 8px 0 0 0;
+}
+.btn:last-child {
+  border-radius: 0 8px 0 0;
+}
+.tab-lists {
+  background-color: #219ebc;
+  border-radius: 0 0 8px 8px;
+  padding: 0 2px 2px 2px;
+  color: #fff;
+}
+.tab-active {
+  background-color: #fff;
+  color: #023047;
+  padding: 0 20px 20px 20px;
+}
+@media screen and (max-width: 600px) {
+  .tab-container {
+    width: 100%;
+    max-width: 450px;
+  }
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .btn {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.6rem;
+  }
+  .tab-active{
+    font-size: 60%;
+  }
+  .btn-learn{
+    padding: 6px;
+    font-size: 0.6rem;
+  }
+}
